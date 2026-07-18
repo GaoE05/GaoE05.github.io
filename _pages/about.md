@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi there 👋🏻, I am Yi Gao (高熠), a third-year undergraduate student at the SWUFE-UD Data Science Institute. I am currently working with Dr. Pengxiang Ding at SymBiosis, focusing on **humanoid dexterous loco-manipulation with compliant human-robot interaction**.
+Hi there 👋🏻, I am Yi Gao (高熠), a third-year undergraduate student at the SWUFE-UD Data Science Institute. I am currently working with Dr. Pengxiang Ding at SymBiosis on **humanoid dexterous loco-manipulation with compliant human-robot interaction**.
 
 Previously, I spent a summer at the Solution & Development Center, Lenovo Robotics Research Institute (Shanghai), where I worked on robot agents for real-world patrol scenarios.
 
@@ -26,8 +26,17 @@ Yi Gao, et al.<br>
 # Experience
 <span class='anchor' id='experience'></span>
 
+## Compliance-Aware Policy-Tracker Interface for Humanoid Contact-Rich Loco-Manipulation
+**SymBiosis**<br>
+*Research Project, 2026 - Present*
+
+- Investigating whether humanoid high-level policies should output explicit compliance intent in addition to motion intent for contact-rich loco-manipulation.
+- Designing a structured 3D compliance token over `body_part`, `level`, and `lower_body_priority`, together with a lightweight grounding layer for existing humanoid trackers.
+- Studying motion-only versus motion-plus-compliance interfaces with force-aware and tracking-aware evaluation in HumanoidArena-style settings.
+- Positioning the work against SONIC, SoftMimic, CHIP, and HumanoidArena, with the main goal of policy-level action semantics rather than a controller-only patch.
+
 ## Context-Grounded Robot Agent for Industrial Patrol
-**SymBiosis / Lenovo Robotics Research Institute (Shanghai), Solution & Development Center**<br>
+**Lenovo Robotics Research Institute (Shanghai), Solution & Development Center**<br>
 *Research Experience in Robot Agent Development, 2025.07 - 2025.12*
 
 - Developed a context-grounded robot agent prototype for quadruped patrol in industrial environments, integrating visual perception, spatio-temporal context, safety-rule memory, and action protocols into a unified decision-making pipeline.
