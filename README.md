@@ -1,4 +1,4 @@
-# Gao Yi - Academic Homepage
+# Yi Gao - Academic Homepage
 
 This repository hosts my personal academic homepage, built from the AcadHomepage Jekyll template and published with GitHub Pages.
 

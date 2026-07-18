@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "高翊"
-description              : "Undergraduate at SWUFE-UD Data Science Institute, focused on embodied AI, robot learning, and VLM/VLA systems."
+title                    : "Yi Gao"
+description              : "Third-year undergraduate at SWUFE-UD Data Science Institute, working on humanoid dexterous loco-manipulation and embodied AI."
 repository               : "GaoE05/GaoE05.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -21,9 +21,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "高翊"
+  name             : "Yi Gao (高熠)"
   avatar           : "images/profile.png"
-  bio              : "Undergraduate at SWUFE-UD Data Science Institute"
+  bio              : "Third-year undergraduate at SWUFE-UD Data Science Institute"
   location         :
   employer         :
   pubmed           : 
