@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Projects"
-    url: "/#projects"
+  - title: "Publications"
+    url: "/#publications"
 
-  - title: "Internship"
-    url: "/#internship"
+  - title: "Experience"
+    url: "/#experience"
