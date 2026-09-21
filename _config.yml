@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yi Gao"
-description              : "Third-year undergraduate at SWUFE-UD Data Science Institute, interested in embodied AI, intelligent agents, world models, and robot learning."
+description              : "Yi Gao, undergraduate at SWUFE-UD Data Science Institute, working on robot learning, humanoid compliance, and contact-rich manipulation."
 repository               : "GaoE05/GaoE05.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -65,6 +65,17 @@ include:
   - _pages
   - files
 exclude:
+  - materials
+  - Academic_CV_Template
+  - "SoftSONIC：面向人形机器人全身柔顺控制的残差学习研究.md"
+  - "暑研潜在导师调研表.md"
+  - "暑研套瓷AP.md"
+  - experience_packaging_embodied_agent_zh.md
+  - "算法工程师简历模版.docx"
+  - RESUME0605.pdf
+  - ShuaiZhou_CV.pdf
+  - yuxuan_cv.pdf
+  - Gemini_Generated_Image_mtjpdqmtjpdqmtjp.png
   - docs
   - google_scholar_crawler
   - "*.sublime-project"

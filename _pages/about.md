@@ -10,30 +10,25 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi there 👋🏻, I am Yi Gao (高熠), a third-year undergraduate student at the SWUFE-UD Data Science Institute. I am currently working with Dr. Pengxiang Ding at SymBiosis on **humanoid dexterous loco-manipulation with compliant human-robot interaction**.
+Hi, I am Yi Gao (高熠), a third-year undergraduate studying Information Management and Information Systems at the SWUFE-UD Data Science Institute, Southwestern University of Finance and Economics. I am enrolled in its four-year, China-based dual-degree program with the University of Delaware.
 
-Previously, I spent a summer at the Solution & Development Center, Lenovo Robotics Research Institute (Shanghai), where I worked on robot agents for real-world patrol scenarios.
+I work with Dr. Pengxiang Ding at SymBiosis on **learning compliant behavior for humanoid robots**, continuing remotely after a summer research internship. My current project, **SoftSONIC**, investigates whether a small learned residual can add compliant responses to a frozen motion-tracking policy.
 
-My research interests lie in **spatial intelligence, world models, and embodied AI**. I am particularly interested in building learning systems that help embodied agents integrate perception, memory, decision-making, and action to acquire useful behaviors from diverse data and act reliably in the physical world. I am always open to collaborations, discussions, and new connections.
+My research interests are **robot learning, contact-rich manipulation, and humanoid whole-body control**. I am especially interested in how robots can respond to physical contact while retaining useful motion skills, and how these capabilities can support manipulation and tool use. Previously, I worked on context-grounded robot agents for industrial patrol at Lenovo Robotics Research Institute (Shanghai).
 
-# Publications
-<span class='anchor' id='publications'></span>
-
-**CE4Patrol: Multi-Layer Context Reasoning for Industrial Anomaly Inspection**<br>
-Yi Gao, et al.<br>
-*WACV 2026 Workshop Submission / Manuscript*
+[CV (PDF)]({{ '/Yi_Gao_CV.pdf' | relative_url }}) · [Email](mailto:3490352665@qq.com) · [GitHub](https://github.com/GaoE05)
 
 # Experience
 <span class='anchor' id='experience'></span>
 
-## Compliance-Aware Policy-Tracker Interface for Humanoid Contact-Rich Loco-Manipulation
+## SoftSONIC: Residual Learning for Humanoid Compliance
 **SymBiosis**<br>
-*Research Project, 2026 - Present*
+*Research Internship & Ongoing Remote Collaboration, May 2026 – Present*
 
-- Investigating whether humanoid high-level policies should output explicit compliance intent in addition to motion intent for contact-rich loco-manipulation.
-- Designing a structured 3D compliance token over `body_part`, `level`, and `lower_body_priority`, together with a lightweight grounding layer for existing humanoid trackers.
-- Studying motion-only versus motion-plus-compliance interfaces with force-aware and tracking-aware evaluation in HumanoidArena-style settings.
-- Positioning the work against SONIC, SoftMimic, CHIP, and HumanoidArena, with the main goal of policy-level action semantics rather than a controller-only patch.
+- Independently responsible for the project implementation, experimental design, and analysis: developing a zero-initialized latent residual on top of a frozen SONIC motion tracker, using SoftMimic's compliant motion augmentation to construct training targets. The residual uses proprioception without external-force measurements at inference.
+- Investigating learning failures through force-observation ablations, residual expressivity and closed-loop response probes, reward-scale analysis, and training-configuration checks.
+- **Preliminary simulation results:** the project-specific compliance-progress score increased from **0.32 to 0.68** in an evaluation using 1,024 parallel environments with adaptive sampling disabled. Evaluation currently covers 10 standing motion clips with wrist perturbations; these are not held-out motions.
+- Current work focuses on reducing tracking degradation without external forces and testing transfer to unseen motions. Broader motion generalization and real-robot validation remain open.
 
 ## Context-Grounded Robot Agent for Industrial Patrol
 **Lenovo Robotics Research Institute (Shanghai), Solution & Development Center**<br>
@@ -43,4 +38,11 @@ Yi Gao, et al.<br>
 - Collected and organized real-world indoor/outdoor patrol data using a DEEPRobotics X30 quadruped platform, including 200+ video clips for evaluating context-dependent anomaly reasoning.
 - Built an automated VLM evaluation workflow with image/video data collection, XML-style structured annotation, prompt-based reasoning, and comparative testing across QwenVL and GLM-family models.
 - Designed a hierarchical context construction module that retrieves location/time-specific rules and maps detected violations to executable safety actions, enabling traceable decisions rather than passive visual classification.
-- Drafted **CE4Patrol**, a WACV workshop submission on multi-layer context reasoning for industrial robot patrol, focusing on the gap between generic VLM perception and embodied, action-aware autonomy.
+- Drafted **CE4Patrol**, a manuscript on multi-layer context reasoning for industrial robot patrol, focusing on the gap between generic VLM perception and embodied, action-aware autonomy.
+
+# Manuscripts
+<span class='anchor' id='publications'></span>
+
+**CE4Patrol: Multi-Layer Context Reasoning for Industrial Anomaly Inspection**<br>
+Yi Gao, et al.<br>
+*Manuscript*
