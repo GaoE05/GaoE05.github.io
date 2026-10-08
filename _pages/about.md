@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I am **Yi Gao (高熠)**, a third-year undergraduate at the [SWUFE-UD Institute of Data Science](https://dids.swufe.edu.cn/EN/Home.htm), a joint institute of Southwestern University of Finance and Economics and the University of Delaware. My dual-degree studies combine **Information Systems (B.S., University of Delaware)** and Information Management and Information Systems (SWUFE). I am based in Chengdu, China, and expect to graduate in 2028.
+Hi, I am **Yi Gao (高熠)**, a third-year undergraduate at the [SWUFE-UD Institute of Data Science](https://dids.swufe.edu.cn/EN/Home.htm), pursuing a **B.S. in Information Systems**. I am based in Chengdu, China, and expect to graduate in 2028.
 
 I am interested in **robot learning for physical interaction**: how robots can respond to contact while retaining the motion and support needed to complete a task. I currently work with [Pengxiang Ding](https://dingpx.github.io/) at [SymBiosis Robotics](https://symbiosis-robotics.com/research/dpc/en/), where I independently lead **SoftSONIC**, a project on learning compliant adaptation of a frozen humanoid motion controller. Previously, I developed context-grounded robot agents for industrial patrol at Lenovo Robotics Research Institute (Shanghai).
 
