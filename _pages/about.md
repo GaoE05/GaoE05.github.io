@@ -10,20 +10,20 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I am **Yi Gao (高熠)**, a third-year undergraduate at the SWUFE-UD Data Science Institute, Southwestern University of Finance and Economics. I study Information Management and Information Systems in its four-year, China-based dual-degree program with the University of Delaware, with graduation expected in 2028.
+Hi, I am **Yi Gao (高熠)**, a third-year undergraduate at the [SWUFE-UD Institute of Data Science](https://dids.swufe.edu.cn/EN/Home.htm), a joint institute of Southwestern University of Finance and Economics and the University of Delaware. My dual-degree studies combine **Information Systems (B.S., University of Delaware)** and Information Management and Information Systems (SWUFE). I am based in Chengdu, China, and expect to graduate in 2028.
 
-I am interested in **robot learning for physical interaction**: how robots can respond to contact while retaining the motion and support needed to complete a task. I currently work with Dr. Pengxiang Ding at SymBiosis, where I independently lead **SoftSONIC**, a project on learning compliant adaptation of a frozen humanoid motion controller. Previously, I developed context-grounded robot agents for industrial patrol at Lenovo Robotics Research Institute (Shanghai).
+I am interested in **robot learning for physical interaction**: how robots can respond to contact while retaining the motion and support needed to complete a task. I currently work with [Pengxiang Ding](https://dingpx.github.io/) at [SymBiosis Robotics](https://symbiosis-robotics.com/research/dpc/en/), where I independently lead **SoftSONIC**, a project on learning compliant adaptation of a frozen humanoid motion controller. Previously, I developed context-grounded robot agents for industrial patrol at Lenovo Robotics Research Institute (Shanghai).
 
 **I am seeking a remote research collaboration in contact-rich manipulation or humanoid control, available immediately for 30 hours/week.** I can contribute to policy implementation, reproducible simulation experiments, data pipelines, and deployment-oriented evaluation.
 
-[CV (PDF)]({{ '/Yi_Gao_CV.pdf' | relative_url }}) · [Email](mailto:3490352665@qq.com) · [GitHub](https://github.com/GaoE05)
+[CV (PDF)]({{ '/Yi_Gao_CV.pdf' | relative_url }}) · [Email](mailto:gaoe05@qq.com) · [GitHub](https://github.com/GaoE05) · [Reading notes (Xiaohongshu)](https://www.xiaohongshu.com/user/profile/602392d40000000001006528)
 
 # Research
 <span class='anchor' id='research'></span>
 
 ## SoftSONIC: Learning Compliant Adaptation of a Frozen Humanoid Motion Prior
-**SymBiosis** · *Research Intern & Ongoing Remote Collaboration, May 2026 – Present*<br>
-*Research guidance: Dr. Pengxiang Ding*
+**[SymBiosis Robotics](https://symbiosis-robotics.com/research/dpc/en/)** · *Research Intern & Ongoing Remote Collaboration, May 2026 – Present*<br>
+*Research guidance: [Pengxiang Ding](https://dingpx.github.io/)*
 
 Motion tracking specifies what a robot should do, but physical contact can require it to deviate from that motion. **Can we learn a reusable contact response on top of an existing whole-body controller, without retraining its motion prior?** SoftSONIC investigates this question by separating the nominal motion skill from a lightweight learned adaptation.
 
@@ -47,10 +47,10 @@ Current work scales compliance augmentation to thousands of loco-manipulation mo
 - Collected and organized **200+ real-world video clips** using a DEEPRobotics X30 quadruped; built structured annotations and a VLM evaluation workflow comparing QwenVL and GLM-family models.
 - Designed hierarchical context retrieval and drafted **CE4Patrol**, a manuscript on multi-layer context reasoning for industrial anomaly inspection.
 
-## ACT and Imitation Learning
-*Technical Project, February – March 2026*
+## VLA Inference for Retail Mobile Manipulation
+*Technical Project, 2026*
 
-Built an ACT-style Transformer with action chunking, reproduced an ACT training workflow in ManiSkill, and implemented a VAE to study latent-variable learning.
+Reproduced a **RoboBenchMart** VLA inference pipeline in ManiSkill, including asset preparation, scene generation, model serving, and evaluation-client integration for retail pick-and-place and open/close tasks.
 
 # Manuscripts
 <span class='anchor' id='publications'></span>

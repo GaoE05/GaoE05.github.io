@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yi Gao"
-description              : "Yi Gao, undergraduate at SWUFE-UD Data Science Institute, working on robot learning, humanoid compliance, and contact-rich manipulation."
+description              : "Yi Gao — robot learning, contact-rich manipulation, and humanoid compliance."
 repository               : "GaoE05/GaoE05.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,13 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yi Gao (高熠)"
-  avatar           : "images/profile.png"
-  bio              : "Third-year undergraduate at SWUFE-UD Data Science Institute"
+  avatar           : "/images/profile-20261008.jpg"
+  bio              : "Robot learning · Physical interaction"
   location         :
   employer         :
   pubmed           : 
   googlescholar    :
-  email            : "3490352665@qq.com"
+  email            : "gaoe05@qq.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -38,6 +38,7 @@ author:
   facebook         :
   foursquare       :
   github           : "GaoE05"
+  xiaohongshu      : "https://www.xiaohongshu.com/user/profile/602392d40000000001006528"
   google_plus      :
   keybase          :
   instagram        :
@@ -66,6 +67,7 @@ include:
   - files
 exclude:
   - materials
+  - recent_selfies1008.HEIC
   - Academic_CV_Template
   - "SoftSONIC：面向人形机器人全身柔顺控制的残差学习研究.md"
   - "暑研潜在导师调研表.md"

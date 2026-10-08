@@ -14,3 +14,5 @@ push.sh
 # Application drafts stay local; the current CV source is public.
 /materials/*
 !/materials/Yi_Gao_CV.html
+
+/recent_selfies1008.HEIC
