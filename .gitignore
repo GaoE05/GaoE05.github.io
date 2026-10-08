@@ -8,3 +8,9 @@ push.sh
 /images/profile.jpg
 /docs/
 /google_scholar_crawler/
+/materials/backups/
+/materials/previews/
+
+# Application drafts stay local; the current CV source is public.
+/materials/*
+!/materials/Yi_Gao_CV.html

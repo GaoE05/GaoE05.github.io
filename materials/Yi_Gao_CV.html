@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yi Gao — Curriculum Vitae — 8 October 2026</title>
+<style>
+  @page { size: A4; margin: 14mm 16mm; }
+  * { box-sizing: border-box; }
+  body { color: #18232d; font-family: "Times New Roman", Times, serif; font-size: 10.4pt; line-height: 1.24; margin: 0 auto; max-width: 178mm; }
+  header { text-align: center; margin-bottom: 10pt; }
+  h1 { font-size: 25pt; margin: 0 0 3pt; font-weight: 700; }
+  header p { margin: 3pt 0; }
+  h2 { font-size: 12pt; color: #183e56; border-bottom: 0.6pt solid #79909e; margin: 11pt 0 6pt; padding-bottom: 2pt; letter-spacing: .25pt; }
+  h3 { font-size: 10.6pt; margin: 0; }
+  a { color: #204e71; text-decoration: none; }
+  p { margin: 3pt 0; }
+  ul { margin: 4pt 0 8pt; padding-left: 14pt; }
+  li { margin: 3pt 0; }
+  .row { display: flex; justify-content: space-between; gap: 12pt; align-items: baseline; }
+  .date { white-space: nowrap; font-size: 9.7pt; }
+  .sub { color: #3d4b55; font-style: italic; }
+  .small { font-size: 9.8pt; }
+  .entry { break-inside: avoid; }
+  @media screen { body { padding: 32px 8px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Yi Gao</h1>
+  <p>Robot Learning · Contact-Rich Manipulation · Humanoid Compliance</p>
+  <p class="small"><a href="mailto:3490352665@qq.com">3490352665@qq.com</a> &nbsp;|&nbsp; <a href="https://GaoE05.github.io">GaoE05.github.io</a> &nbsp;|&nbsp; <a href="https://github.com/GaoE05">github.com/GaoE05</a></p>
+<p class="small">Available immediately for remote research collaboration: 30 hours/week</p>
+</header>
+<section>
+  <h2>Education</h2>
+  <div class="row"><h3>SWUFE-UD Data Science Institute</h3><span class="date">Sep 2024 – Jun 2028 (expected)</span></div>
+  <p>Southwestern University of Finance and Economics · Chengdu, China</p>
+  <p>Information Management and Information Systems; GPA: <strong>87.7/100</strong></p>
+  <p class="small">Four-year, China-based dual-degree program with the University of Delaware<br>University of Delaware degree: B.S. in Information Systems (expected)</p>
+</section>
+<section>
+  <h2>Research Experience</h2>
+  <div class="entry">
+    <div class="row"><h3>SymBiosis</h3><span class="date">May 2026 – Present</span></div>
+    <p class="sub">Research Intern; ongoing remote collaboration · Advisor: Dr. Pengxiang Ding</p>
+    <p><strong>SoftSONIC: Residual Learning for Humanoid Compliance</strong></p>
+    <ul>
+      <li><strong>Independently led SoftSONIC</strong> from method design and data generation to RL experiments and deployment validation, with research guidance from senior collaborators. Studied lightweight compliance adaptation of an existing humanoid motion prior.</li>
+      <li>Developed a bounded <strong>64-D latent residual</strong> over the frozen SONIC encoder and decoder; trained it with PPO and SoftMimic-inspired compliant references. The deployed actor uses proprioceptive/action history without explicit external-force measurements.</li>
+      <li>Trained and evaluated a <strong>shared policy across 32 motions</strong>, using paired perturbations and no-force tests; compared joint-space residuals, nominal-token conditioning, and reward variants to study compliance, motion preservation, and transfer.</li>
+      <li>Implemented and validated a <strong>50 Hz C++/TensorRT deployment</strong> based on official SONIC. Tested standing, walking, and selected shared-policy motions on a <strong>Unitree G1</strong>, observing yielding under manual pulls. Larger-scale training and quantitative task evaluation are ongoing.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row"><h3>Lenovo Robotics Research Institute (Shanghai)</h3><span class="date">Jul 2025 – Dec 2025</span></div>
+    <p class="sub">Research Intern · Solution &amp; Development Center</p>
+    <ul>
+      <li>Developed a context-grounded robot agent prototype for industrial patrol, integrating visual perception, location/time-specific safety rules, and action protocols into a traceable decision pipeline.</li>
+      <li>Collected and organized <strong>200+ real-world video clips</strong> using a DEEPRobotics X30 quadruped; built a structured annotation and VLM evaluation workflow comparing QwenVL and GLM-family models.</li>
+      <li>Drafted <em>CE4Patrol: Multi-Layer Context Reasoning for Industrial Anomaly Inspection</em> (manuscript; Yi Gao, et al.).</li>
+    </ul>
+  </div>
+</section>
+<section>
+  <h2>Selected Technical Project</h2>
+  <div class="row"><h3>ACT and Imitation Learning</h3><span class="date">Feb – Mar 2026</span></div>
+  <p>Built an ACT-style Transformer architecture with action chunking and reproduced an ACT training workflow in ManiSkill; implemented a VAE to study latent-variable learning.</p>
+</section>
+<section>
+  <h2>Technical Skills</h2>
+  <p><strong>Programming &amp; tools:</strong> Python, C++, PyTorch, Git, Linux, Docker, TensorRT</p>
+  <p><strong>Simulation:</strong> Isaac Lab / Isaac Sim, MuJoCo, ManiSkill, PyBullet</p>
+  <p><strong>Methods:</strong> PPO, residual policy learning, motion tracking, imitation learning, experimental diagnostics</p>
+</section>
+<section>
+  <h2>Honors &amp; Languages</h2>
+  <p>Meritorious Winner, Mathematical Contest in Modeling (COMAP), 2026</p>
+  <p>Second Prize, National English Competition for College Students, 2026 · CET-4: 632; CET-6: 599</p>
+</section>
+</body>
+</html>

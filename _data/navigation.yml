@@ -1,10 +1,7 @@
-# main links links
 main:
-  - title: "Manuscripts"
-    url: "/#publications"
-
+  - title: "Research"
+    url: "/#research"
   - title: "Experience"
     url: "/#experience"
-
   - title: "CV"
     url: "/Yi_Gao_CV.pdf"
