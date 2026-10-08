@@ -48,8 +48,8 @@
     <ul>
       <li><strong>Independently led SoftSONIC</strong> from method design and data generation to RL experiments and deployment validation, with research guidance from senior collaborators. Studied lightweight compliance adaptation of an existing humanoid motion prior.</li>
       <li>Developed a bounded <strong>64-D latent residual</strong> over the frozen SONIC encoder and decoder; trained it with PPO and SoftMimic-inspired compliant references. The deployed actor uses proprioceptive/action history without explicit external-force measurements.</li>
-      <li>Trained and evaluated a <strong>shared policy across 32 motions</strong>, using paired perturbations and no-force tests; compared joint-space residuals, nominal-token conditioning, and reward variants to study compliance, motion preservation, and transfer.</li>
-      <li>Implemented and validated a <strong>50 Hz C++/TensorRT deployment</strong> based on official SONIC. Tested standing, walking, and dynamic motions on a <strong>Unitree G1</strong>, observing yielding under manual pulls and preliminary transfer to an untrained backward-walking reference. Larger-scale training and quantitative task evaluation are ongoing.</li>
+      <li>Trained and evaluated a <strong>shared residual policy on 32 training motions in simulation</strong>, using paired perturbations and no-force tests; compared joint-space residuals, nominal-token conditioning, and reward variants to study compliance, motion preservation, and transfer.</li>
+      <li>Implemented and validated a <strong>50 Hz C++/TensorRT deployment</strong> based on official SONIC. Observed qualitative yielding under manual pulls on a <strong>Unitree G1</strong> during standing, walking, and selected motion replays, including a backward-walking reference excluded from residual-policy training. Observations remain preliminary; response strength varies across motions.</li>
     </ul>
   </div>
   <div class="entry">
