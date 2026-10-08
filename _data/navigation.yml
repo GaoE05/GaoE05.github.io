@@ -1,6 +1,8 @@
 main:
   - title: "Research"
     url: "/#research"
+  - title: "Demos"
+    url: "/#demos"
   - title: "Experience"
     url: "/#experience"
   - title: "CV"

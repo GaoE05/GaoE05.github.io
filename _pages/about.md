@@ -29,12 +29,54 @@ Motion tracking specifies what a robot should do, but physical contact can requi
 
 - **Method:** freeze the released [SONIC](https://nvlabs.github.io/GEAR-SONIC/) encoder and decoder, and learn a bounded **64-dimensional latent residual** from proprioceptive and previous-action history. PPO uses [SoftMimic-inspired](https://arxiv.org/abs/2510.17792) compliant motion targets and SONIC's native motion-quality rewards. Deployment requires no explicit external-force measurement for the residual actor.
 - **Shared-policy study:** trained and evaluated one adapter across **32 motions**, with paired force/no-force comparisons and unseen-motion tests. Controlled studies of residual action spaces, observation conditioning, and reward variants examine the tradeoff between compliant response and nominal motion quality.
-- **Real-robot progress:** deployed the adapter through a **50 Hz C++/TensorRT pipeline on a Unitree G1**. Standing, walking, and selected shared-policy motions show qualitative yielding under manual pulls, including preliminary observations on motions outside the 32-motion training set. Response strength varies across motions.
+- **Real-robot progress:** deployed the adapter through a **50 Hz C++/TensorRT pipeline on a Unitree G1**. Standing, walking, and selected shared-policy motions show qualitative yielding under manual pulls, including preliminary transfer observations on an untrained backward-walking reference. Response strength varies across motions.
 - **My contribution:** independently led the research question, method and data-pipeline development, experiment design and analysis, and deployment validation, with guidance from senior collaborators.
 
 Current work scales compliance augmentation to thousands of loco-manipulation motion sources and tests broader shared-policy generalization. Large-scale training is in progress. Task-level evaluation with a fixed GR00T policy is a next step; the current hardware observations are not a calibrated stiffness or task-success benchmark.
 
 *Updated October 8, 2026. Research in progress.*
+
+## Real-robot demonstrations
+<span class="anchor" id="demos"></span>
+
+**Manual interaction during G1 motion replay.** The videos show standing, walking, and a door-opening motion from the residual training set, plus an **untrained backward-walking reference** that also exhibits yielding. The latter is preliminary qualitative evidence of transfer beyond the trained references; broader generalization evaluation is ongoing.
+
+<div class="softsonic-demos">
+  <figure class="softsonic-demo">
+    <figcaption><strong>Standing</strong><span class="softsonic-demo-tag trained">Trained motion</span></figcaption>
+    <video controls muted playsinline preload="none" poster="{{ '/assets/images/softsonic/stand-trained.jpg' | relative_url }}" aria-label="Standing with manual interaction">
+      <source src="{{ '/assets/videos/softsonic/stand-trained.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support embedded video. <a href="{{ '/assets/videos/softsonic/stand-trained.mp4' | relative_url }}">Open the video</a>.
+    </video>
+    <a class="softsonic-demo-link" href="{{ '/assets/videos/softsonic/stand-trained.mp4' | relative_url }}">Open video</a>
+  </figure>
+  <figure class="softsonic-demo">
+    <figcaption><strong>Walking</strong><span class="softsonic-demo-tag trained">Trained motion</span></figcaption>
+    <video controls muted playsinline preload="none" poster="{{ '/assets/images/softsonic/walking-trained.jpg' | relative_url }}" aria-label="Walking with manual interaction">
+      <source src="{{ '/assets/videos/softsonic/walking-trained.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support embedded video. <a href="{{ '/assets/videos/softsonic/walking-trained.mp4' | relative_url }}">Open the video</a>.
+    </video>
+    <a class="softsonic-demo-link" href="{{ '/assets/videos/softsonic/walking-trained.mp4' | relative_url }}">Open video</a>
+  </figure>
+  <figure class="softsonic-demo">
+    <figcaption><strong>Door-opening motion replay</strong><span class="softsonic-demo-tag trained">Trained motion</span></figcaption>
+    <video controls muted playsinline preload="none" poster="{{ '/assets/images/softsonic/door-motion-trained.jpg' | relative_url }}" aria-label="Door-opening motion replay with manual interaction">
+      <source src="{{ '/assets/videos/softsonic/door-motion-trained.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support embedded video. <a href="{{ '/assets/videos/softsonic/door-motion-trained.mp4' | relative_url }}">Open the video</a>.
+    </video>
+    <a class="softsonic-demo-link" href="{{ '/assets/videos/softsonic/door-motion-trained.mp4' | relative_url }}">Open video</a>
+  </figure>
+  <figure class="softsonic-demo">
+    <figcaption><strong>Backward walking</strong><span class="softsonic-demo-tag unseen">Unseen motion</span></figcaption>
+    <video controls muted playsinline preload="none" poster="{{ '/assets/images/softsonic/backward-walking-unseen.jpg' | relative_url }}" aria-label="Backward walking with manual interaction">
+      <source src="{{ '/assets/videos/softsonic/backward-walking-unseen.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support embedded video. <a href="{{ '/assets/videos/softsonic/backward-walking-unseen.mp4' | relative_url }}">Open the video</a>.
+    </video>
+    <a class="softsonic-demo-link" href="{{ '/assets/videos/softsonic/backward-walking-unseen.mp4' | relative_url }}">Open video</a>
+  </figure>
+</div>
+
+<small>Recorded with an overhead safety harness and manual perturbations. “Unseen” refers to the residual policy’s training references. These clips demonstrate observed behavior, rather than a measured stiffness or task-success benchmark.</small>
 
 # Experience
 <span class='anchor' id='experience'></span>
@@ -48,7 +90,7 @@ Current work scales compliance augmentation to thousands of loco-manipulation mo
 - Designed hierarchical context retrieval and drafted **CE4Patrol**, a manuscript on multi-layer context reasoning for industrial anomaly inspection.
 
 ## VLA Inference for Retail Mobile Manipulation
-*Technical Project, 2026*
+*Technical Project, March – April 2026*
 
 Reproduced a **RoboBenchMart** VLA inference pipeline in ManiSkill, including asset preparation, scene generation, model serving, and evaluation-client integration for retail pick-and-place and open/close tasks.
 
